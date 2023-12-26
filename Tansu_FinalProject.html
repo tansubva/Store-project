@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <title>Final Project</title>
+  </head>
+  <body>
+    <header>
+      <!-- HEADER -->
+      <h1>.InteriorRevive</h1>
+      <div><a href="#reviews">REVIEWS</a></div>
+      <div><a href="#ideas-main">PRODUCTS</a></div>
+      <div id="cartBtn">
+        <img
+          id="openCart"
+          src="./images/shopping-cart-svgrepo-com.svg"
+          alt="cartSvg"
+        />
+        <div id="counter">0</div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Get Inspiration From Our Refreshing Ideas</h1>
+      <!-- time/currency -->
+      <div id="headerBtns">
+        <div id="time"></div>
+        <label for="currency"></label>
+        <select id="currency">
+          <option>$CAD</option>
+          <option>$USD</option>
+          <option>€EURO</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <div class="container">
+      <div class="cart">
+        <div id="itemsCart">
+          <h2>Your Cart</h2>
+          <hr />
+          <ol id="cartOutput">
+            Your Cart Is Empty
+          </ol>
+        </div>
+
+        <div id="paymentCart">
+          <h2>Order Summary</h2>
+          <hr />
+          <div id="orderSummary"></div>
+        </div>
+        <button id="closeCart">Close Cart</button>
+      </div>
+    </div>
+
+    <!-- FILTER BY PRICE -->
+    <section id="ideas-main">
+      <h2 class="space">YOUR BEST VALUE PRODUCTS</h2>
+      <div id="products">
+        <div class="sortingMenu">
+          <div id="priceFilter">
+            <label for="filter">Filter</label>
+            <select name="filter" id="filter">
+              <option>All</option>
+              <option>Under $50</option>
+              <option>$50 - $100</option>
+              <option>$100 - $200</option>
+              <option>$200 And More</option>
+            </select>
+          </div>
+
+          <!-- FILTER BY CATEGORY -->
+          <div id="radioType">
+            <div>
+              <label for="all">All</label>
+              <input type="radio" name="furnitureType" id="allTypes" />
+            </div>
+
+            <div>
+              <label for="dining">Dining Room</label>
+              <input type="radio" name="furnitureType" id="dining" />
+            </div>
+
+            <div>
+              <label for="bedroom">Bedroom</label>
+              <input type="radio" name="furnitureType" id="bedroom" />
+            </div>
+
+            <div>
+              <label for="livingRoom">Living Room</label>
+              <input type="radio" name="furnitureType" id="livingRoom" />
+            </div>
+
+            <div>
+              <label for="decoration">Decoration</label>
+              <input type="radio" name="furnitureType" id="decoration" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div id="itemsOutput"></div>
+      </div>
+
+      <!-- REVIEWS -->
+      <section id="reviews">
+        <h2>CHECK REVIEWS</h2>
+        <div class="reviewForm">
+          <h3>WRITE A REVIEW</h3>
+
+          <div>
+            <label for="itemID">Your Item's ID</label>
+            <input type="text" name="item" id="itemID" />
+            <div id="idValidation"></div>
+          </div>
+
+          <div>
+            <label for="userName">Your Name</label>
+            <input type="text" name="userName" id="userName" />
+            <div id="nameValidation"></div>
+          </div>
+
+          <div>
+            <label for="comment">Leave Your Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div id="commentValidation"></div>
+          </div>
+
+          <div>
+            <label for="rating">Leave A Rating</label>
+            <input type="number" min="1" max="5" name="rating" id="rating" />
+            <div id="ratingValidation"></div>
+          </div>
+
+          <button id="submitBtn">Submit</button>
+        </div>
+        <div id="itemInfo"></div>
+      </section>
+
+      <!-- FOOTER -->
+      <div class="quote">
+        <h1>
+          Lorem
+          <img
+            src="./images/jesus-arango-kyWiHPvLrcI-unsplash.jpg"
+            alt="furniture"
+          />
+          ipsum, dolor sit amet consectetur adipisicing elit.
+          <img src="./images/beazy-toX2sYnycCw-unsplash.jpg" alt="furniture" />
+          Aliquam
+        </h1>
+      </div>
+    </section>
+    <footer>
+      <h2>We Provide Best Handpicked Home Decor</h2>
+      <button>
+        <a href="./Tansu_FinalProject.html">EXPLORE OUR PRODUCTS</a>
+      </button>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
